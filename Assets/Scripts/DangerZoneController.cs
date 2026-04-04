@@ -25,7 +25,9 @@ public class DangerZoneController : MonoBehaviour
     }
 
     private IEnumerator MissileCountdown(){
-        yield return new WaitForSeconds(missileDelay);
-        Debug.Log("Missile launched!");
+        while(true){
+            yield return new WaitForSeconds(missileDelay);
+            Debug.Log("Missile launched!");
+        }
     }
 }
