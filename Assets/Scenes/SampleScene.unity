@@ -764,6 +764,7 @@ GameObject:
   - component: {fileID: 556030856}
   - component: {fileID: 556030855}
   - component: {fileID: 556030857}
+  - component: {fileID: 556030858}
   m_Layer: 0
   m_Name: AirbusModel
   m_TagString: Player
@@ -783,11 +784,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87b402749ab1549a68873ad5339b4f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlightController
+  examManager: {fileID: 2110862004}
   speed: 0
   maxSpeed: 500
   minSpeed: 0
-  rotspeed1: 0
-  rotspeed2: 0
+  rotspeed1: 25
+  rotspeed2: 25
 --- !u!4 &556030856
 Transform:
   m_ObjectHideFlags: 0
@@ -832,6 +834,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &556030858
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556030854}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: -5.5, y: 0, z: -19}
 --- !u!1 &565251428
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,6 +867,7 @@ GameObject:
   - component: {fileID: 565251432}
   - component: {fileID: 565251431}
   - component: {fileID: 565251430}
+  - component: {fileID: 565251433}
   m_Layer: 0
   m_Name: DangerZone(1) (2)
   m_TagString: DangerZone
@@ -944,6 +968,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7000, y: 2000, z: 6000}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &565251433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565251428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5b0c7149f804dc9811ec2093fca43d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DangerZoneController
+  examManager: {fileID: 2110862004}
+  missileDelay: 5
 --- !u!1 &578136122
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +994,7 @@ GameObject:
   - component: {fileID: 578136126}
   - component: {fileID: 578136125}
   - component: {fileID: 578136124}
+  - component: {fileID: 578136127}
   m_Layer: 0
   m_Name: DangerZone(1)
   m_TagString: DangerZone
@@ -1056,6 +1095,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7000, y: 2000, z: 6000}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &578136127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578136122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5b0c7149f804dc9811ec2093fca43d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DangerZoneController
+  examManager: {fileID: 2110862004}
+  missileDelay: 5
 --- !u!1 &580559424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1121,7 @@ GameObject:
   - component: {fileID: 580559428}
   - component: {fileID: 580559427}
   - component: {fileID: 580559426}
+  - component: {fileID: 580559429}
   m_Layer: 0
   m_Name: DangerZone(1) (3)
   m_TagString: DangerZone
@@ -1168,6 +1222,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7000, y: 2000, z: 6000}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &580559429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580559424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5b0c7149f804dc9811ec2093fca43d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DangerZoneController
+  examManager: {fileID: 2110862004}
+  missileDelay: 5
 --- !u!4 &614786546 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 13369524f100e4aeaaff278188c2a480, type: 3}
@@ -2935,6 +3003,7 @@ GameObject:
   - component: {fileID: 1590907127}
   - component: {fileID: 1590907126}
   - component: {fileID: 1590907125}
+  - component: {fileID: 1590907128}
   m_Layer: 0
   m_Name: DangerZone(1) (1)
   m_TagString: DangerZone
@@ -3035,6 +3104,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7000, y: 2000, z: 6000}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1590907128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590907123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5b0c7149f804dc9811ec2093fca43d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DangerZoneController
+  examManager: {fileID: 2110862004}
+  missileDelay: 5
 --- !u!4 &1676716435 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
