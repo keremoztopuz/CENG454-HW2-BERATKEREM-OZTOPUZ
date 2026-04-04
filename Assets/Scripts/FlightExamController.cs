@@ -20,13 +20,13 @@ public class FlightExamController : MonoBehaviour
 
     private void updateHUD() {
         if (missionCompleted) {
-            statusText.text = "Mission Completed."
-        } else if {inDangerZone} {
-            statusText.text = "DANGER ZONE"
+            statusText.text = "Mission Completed.";
+        } else if (inDangerZone) {
+            statusText.text = "DANGER ZONE";
         } else if (hasTakenOff) {
-            statusText.text = "In Flight"
+            statusText.text = "In Flight";
         } else {
-            statusText.text = "On Ground."
+            statusText.text = "On Ground.";
         }
     }
 
@@ -53,7 +53,7 @@ public class FlightExamController : MonoBehaviour
         hasTakenOff = false;
         threatCleaned = false;
         inDangerZone = false;
-        missionText.text = "Missile Hit!"
+        missionText.text = "Missile Hit!";
         missionText.color = Color.red;
         updateHUD();
     }
