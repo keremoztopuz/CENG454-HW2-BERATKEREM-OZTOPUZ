@@ -8,6 +8,7 @@ public class DangerZoneController : MonoBehaviour
     [SerializeField] private FlightExamController examManager;
     [SerializeField] private List<MissileLauncher> missileLaunchers;
     [SerializeField] private float missileDelay = 5f;
+    [SerializeField] private Transform aircraftTransform;
     private Coroutine activeCountdown;
 
     void OnTriggerEnter(Collider other) {
@@ -29,7 +30,7 @@ public class DangerZoneController : MonoBehaviour
     private IEnumerator MissileCountdown(){
         while(true){
             yield return new WaitForSeconds(missileDelay);
-            foreach (MissileLauncher ml in missileLaunchers) ml.Launch(examManager.transform);
+            foreach (MissileLauncher ml in missileLaunchers) ml.Launch(aircraftTransform);
             Debug.Log("Missile launched!");
         }
     }
