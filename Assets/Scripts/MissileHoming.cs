@@ -13,11 +13,6 @@ public class MissileHoming : MonoBehaviour
         target = newTarget;
     }
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if (target == null) return;
