@@ -119,16 +119,118 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &23231216 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1098933893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &23231217 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1098933893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &23231218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23231216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
+--- !u!1 &61324066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61324067}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61324067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61324066}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 813321602}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &67083329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1796852691}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &67083330 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1796852691}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &67083331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67083329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
+--- !u!1 &77796719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 77796720}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &77796720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77796719}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 946025528}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &91850779
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,14 +409,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2049063283}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 487852025}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &119208749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1787444461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &119208750 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1787444461}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &119208751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119208749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
 --- !u!1 &157352703
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,11 +497,93 @@ Transform:
   - {fileID: 119208750}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &265709804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 265709805}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &265709805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265709804}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1354806551}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &351523476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1013612964}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &351523477 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1013612964}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &351523478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351523476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
+--- !u!1 &366944405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 366944406}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &366944406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366944405}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2039557697}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &389261682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -440,8 +650,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 366944406}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2039557698}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
 --- !u!1 &410087039
 GameObject:
@@ -671,14 +887,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1995836592}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2013175666}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &487852023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 102524526}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &487852024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 102524526}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &487852025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487852023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
 --- !u!1001 &537170535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -745,14 +987,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1255906321}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1229171505}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &547004436 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1097823339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &547004437 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1097823339}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &547004438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547004436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
 --- !u!1 &556030854
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +1123,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: -5.5, y: 0, z: -19}
+--- !u!1 &559674501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 559674502}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &559674502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559674501}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1702387187}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &565251428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,11 +1540,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 13369524f100e4aeaaff278188c2a480, type: 3}
   m_PrefabInstance: {fileID: 99744009}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &620645540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1556394295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &620645541 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1556394295}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &620645542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620645540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
+--- !u!1 &621808206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621808207}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &621808207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621808206}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 67083330}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &697284784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1312,9 +1662,77 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 798147931}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1676716436}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &744398689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 744398690}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &744398690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744398689}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1264809906}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &798147930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798147931}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &798147931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798147930}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1676716435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &802826486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,11 +1903,31 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &813321601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 2094160053}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &813321602 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 2094160053}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &813321603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813321601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,11 +2114,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858881366}
   m_CullTransparentMesh: 1
+--- !u!1 &931105293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1859972066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &931105294 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1859972066}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &931105295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931105293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
 --- !u!1001 &942941629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1747,14 +2205,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 77796720}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 946025529}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &946025527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 942941629}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &946025528 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 942941629}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &946025529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946025527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
 --- !u!1001 &1013612964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1821,9 +2305,77 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1210204106}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 351523478}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &1020908542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1020908543}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1020908543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020908542}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 620645541}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1034495176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034495177}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1034495177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034495176}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1305030497}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1097823339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1890,8 +2442,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1130245507}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 547004438}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
 --- !u!1001 &1098933893
 PrefabInstance:
@@ -1959,8 +2517,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1981247527}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 23231218}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
 --- !u!1 &1104772185
 GameObject:
@@ -2131,9 +2695,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 265709805}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1354806552}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &1130245506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1130245507}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1130245507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130245506}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 547004437}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1135462684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2200,9 +2801,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 744398690}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1264809907}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &1141936243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1141936244}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1141936244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141936243}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1794216324}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1186148402 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e69bd6f7854904009badfe4d3241ee9a, type: 3}
@@ -2286,6 +2924,68 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1210204105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1210204106}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1210204106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210204105}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 351523477}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1211549688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1211549689}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1211549689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211549688}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 931105294}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1216161647
 GameObject:
@@ -2490,14 +3190,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1034495177}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1305030498}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &1229171503 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 537170535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1229171504 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 537170535}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1229171505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229171503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
+--- !u!1 &1255906320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1255906321}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1255906321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255906320}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229171504}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1262412473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2564,14 +3321,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1842476747}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1555073916}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &1264809905 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1135462684}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1264809906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1135462684}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1264809907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264809905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
 --- !u!1001 &1288017145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2638,14 +3421,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1141936244}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1794216325}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &1305030496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1222972782}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1305030497 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1222972782}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1305030498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305030496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
 --- !u!1001 &1328403987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2712,19 +3521,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2071776381}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2121294163}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &1354806550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1118422767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1354806551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1118422767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1354806552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354806550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
+--- !u!1 &1360974018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1430608145}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1360974019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1430608145}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1360974020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360974018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
 --- !u!1 &1366686038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2845,9 +3700,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1476718068}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1360974020}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &1476718067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1476718068}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1476718068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476718067}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1360974019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1513456054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2917,11 +3809,31 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e69bd6f7854904009badfe4d3241ee9a, type: 3}
+--- !u!1 &1555073914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1262412473}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1555073915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1262412473}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1555073916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555073914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
 --- !u!1001 &1556394295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2988,8 +3900,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1020908543}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 620645542}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
 --- !u!1 &1590907123
 GameObject:
@@ -3118,16 +4036,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DangerZoneController
   examManager: {fileID: 2110862004}
   missileDelay: 5
+--- !u!1 &1676716434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 697284784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1676716435 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 697284784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1676716436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676716434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
+--- !u!1 &1702387186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 2113433045}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1702387187 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 2113433045}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1702387188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702387186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
 --- !u!1001 &1787444461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3194,14 +4152,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2089969355}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 119208751}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &1794216323 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1288017145}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1794216324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1288017145}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1794216325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794216323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
 --- !u!1001 &1796852691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3268,9 +4252,77 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 621808207}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 67083331}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &1821184401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1821184402}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1821184402
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821184401}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1920923077}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1842476746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1842476747}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1842476747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842476746}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1555073915}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1859972066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3337,8 +4389,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1211549689}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 931105295}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
 --- !u!1001 &1884068586
 PrefabInstance:
@@ -3409,26 +4467,179 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e69bd6f7854904009badfe4d3241ee9a, type: 3}
+--- !u!1 &1920923076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1211386675215474144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1920923077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1211386675215474144}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1920923078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920923076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
+--- !u!1 &1981247526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1981247527}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1981247527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981247526}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 23231217}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1995836591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1995836592}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1995836592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995836591}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2013175665}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1999314160 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e69bd6f7854904009badfe4d3241ee9a, type: 3}
   m_PrefabInstance: {fileID: 1884068586}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2013175664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 472087949}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2013175665 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 472087949}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2013175666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013175664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
+--- !u!1 &2039557696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 389261682}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2039557697 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 389261682}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2039557698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039557696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
+--- !u!1 &2049063282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2049063283}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2049063283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049063282}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 487852024}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2063103039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3522,6 +4733,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2071776380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2071776381}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2071776381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071776380}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2121294162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2089969354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2089969355}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2089969355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089969354}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 119208750}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2094160053
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3588,8 +4861,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 61324067}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 813321603}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
 --- !u!1 &2110862003
 GameObject:
@@ -3703,14 +4982,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 559674502}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1702387188}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+--- !u!1 &2121294161 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+  m_PrefabInstance: {fileID: 1328403987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2121294162 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
   m_PrefabInstance: {fileID: 1328403987}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2121294163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121294161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
+  missilePrefab: {fileID: 0}
+  launchPoint: {fileID: 0}
+  launchAudio: {fileID: 0}
 --- !u!1001 &1211386675215474144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3777,8 +5082,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3663762734300161133, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1821184402}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1920923078}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
