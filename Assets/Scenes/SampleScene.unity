@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 1981247527}
   launchAudio: {fileID: 0}
 --- !u!1 &61324066
 GameObject:
@@ -197,8 +197,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 621808207}
   launchAudio: {fileID: 0}
 --- !u!1 &77796719
 GameObject:
@@ -440,8 +440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 2089969355}
   launchAudio: {fileID: 0}
 --- !u!1 &157352703
 GameObject:
@@ -550,8 +550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 1210204106}
   launchAudio: {fileID: 0}
 --- !u!1 &366944405
 GameObject:
@@ -918,8 +918,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 2049063283}
   launchAudio: {fileID: 0}
 --- !u!1001 &537170535
 PrefabInstance:
@@ -1018,8 +1018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 1130245507}
   launchAudio: {fileID: 0}
 --- !u!1 &556030854
 GameObject:
@@ -1562,8 +1562,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 1020908543}
   launchAudio: {fileID: 0}
 --- !u!1 &621808206
 GameObject:
@@ -1925,8 +1925,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 61324067}
   launchAudio: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
@@ -2136,8 +2136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 1211549689}
   launchAudio: {fileID: 0}
 --- !u!1001 &942941629
 PrefabInstance:
@@ -2236,8 +2236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 77796720}
   launchAudio: {fileID: 0}
 --- !u!1001 &1013612964
 PrefabInstance:
@@ -3221,8 +3221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 1255906321}
   launchAudio: {fileID: 0}
 --- !u!1 &1255906320
 GameObject:
@@ -3352,8 +3352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 744398690}
   launchAudio: {fileID: 0}
 --- !u!1001 &1288017145
 PrefabInstance:
@@ -3452,8 +3452,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 1034495177}
   launchAudio: {fileID: 0}
 --- !u!1001 &1328403987
 PrefabInstance:
@@ -3552,8 +3552,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 265709805}
   launchAudio: {fileID: 0}
 --- !u!1 &1360974018 stripped
 GameObject:
@@ -3577,8 +3577,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 1476718068}
   launchAudio: {fileID: 0}
 --- !u!1 &1366686038
 GameObject:
@@ -3831,8 +3831,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 1842476747}
   launchAudio: {fileID: 0}
 --- !u!1001 &1556394295
 PrefabInstance:
@@ -4058,8 +4058,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 798147931}
   launchAudio: {fileID: 0}
 --- !u!1 &1702387186 stripped
 GameObject:
@@ -4083,8 +4083,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 559674502}
   launchAudio: {fileID: 0}
 --- !u!1001 &1787444461
 PrefabInstance:
@@ -4183,8 +4183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 1141936244}
   launchAudio: {fileID: 0}
 --- !u!1001 &1796852691
 PrefabInstance:
@@ -4489,8 +4489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 1821184402}
   launchAudio: {fileID: 0}
 --- !u!1 &1981247526
 GameObject:
@@ -4581,8 +4581,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 1995836592}
   launchAudio: {fileID: 0}
 --- !u!1 &2039557696 stripped
 GameObject:
@@ -4606,8 +4606,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 366944406}
   launchAudio: {fileID: 0}
 --- !u!1 &2049063282
 GameObject:
@@ -5013,8 +5013,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80acc706a9e4589b69e44cefa42dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLauncher
-  missilePrefab: {fileID: 0}
-  launchPoint: {fileID: 0}
+  missilePrefab: {fileID: 3973526536628447587, guid: 79312dadc1eef4168a881a2e752b55e9, type: 3}
+  launchPoint: {fileID: 2071776381}
   launchAudio: {fileID: 0}
 --- !u!1001 &1211386675215474144
 PrefabInstance:
