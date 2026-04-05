@@ -21,12 +21,15 @@ public class DangerZoneController : MonoBehaviour
             StopCoroutine(activeCountdown);
             activeCountdown = null;
             examManager.ExitDangerZone();
+            missileLauncher.DestroyActiveMissile();
         }
     }
 
     private IEnumerator MissileCountdown(){
         while(true){
             yield return new WaitForSeconds(missileDelay);
+            missileLauncher.Launch(examManager.transform);
+
             Debug.Log("Missile launched!");
         }
     }
