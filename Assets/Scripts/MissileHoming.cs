@@ -9,6 +9,7 @@ public class MissileHoming : MonoBehaviour
     [SerializeField] private FlightExamController examManager;
 
     public void SetTarget(Transform newTarget) {
+        Debug.Log("Target set: " + newTarget.name);
         target = newTarget;
     }
 
