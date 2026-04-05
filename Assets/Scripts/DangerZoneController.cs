@@ -5,7 +5,7 @@ using System.Collections;
 public class DangerZoneController : MonoBehaviour
 {
     [SerializeField] private FlightExamController examManager;
-    //[SerializeField] private MissileLauncher missileLauncher;
+    [SerializeField] private MissileLauncher missileLauncher;
     [SerializeField] private float missileDelay = 5f;
     private Coroutine activeCountdown;
 
