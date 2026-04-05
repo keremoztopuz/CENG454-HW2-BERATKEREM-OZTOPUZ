@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 // MARK: Start and Update deleted because they are no needed.
 public class DangerZoneController : MonoBehaviour
 {
     [SerializeField] private FlightExamController examManager;
-    [SerializeField] private MissileLauncher missileLauncher;
+    [SerializeField] private List<MissileLauncher> missileLaunchers;
     [SerializeField] private float missileDelay = 5f;
     private Coroutine activeCountdown;
 
@@ -21,15 +22,14 @@ public class DangerZoneController : MonoBehaviour
             StopCoroutine(activeCountdown);
             activeCountdown = null;
             examManager.ExitDangerZone();
-            missileLauncher.DestroyActiveMissile();
+            foreach (MissileLauncher ml in missileLaunchers) ml.DestroyActiveMissile();
         }
     }
 
     private IEnumerator MissileCountdown(){
         while(true){
             yield return new WaitForSeconds(missileDelay);
-            missileLauncher.Launch(examManager.transform);
-
+            foreach (MissileLauncher ml in missileLaunchers) ml.Launch(examManager.transform);
             Debug.Log("Missile launched!");
         }
     }
