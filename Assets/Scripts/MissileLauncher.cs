@@ -8,7 +8,8 @@ public class MissileLauncher : MonoBehaviour
 
     private GameObject activeMissile;
 
-public void Launch(Transform target){
+public void Launch(Transform target)
+{
     Debug.Log("Launch called!");
     Debug.Log("missilePrefab: " + missilePrefab);
     Debug.Log("launchPoint: " + launchPoint);
@@ -21,12 +22,11 @@ public void Launch(Transform target){
         homing.SetTarget(target);
         }
 
-    if (launchAudio != null) {
-        launchAudio.Play();
-        }
+    launchAudio?.Play();
     }
 
-public void DestroyActiveMissile(){
+public void DestroyActiveMissile()
+{
     if(activeMissile != null){
         Destroy(activeMissile);
         activeMissile = null;
