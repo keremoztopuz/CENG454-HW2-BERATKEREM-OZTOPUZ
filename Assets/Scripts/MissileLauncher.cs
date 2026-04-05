@@ -22,5 +22,12 @@ public void Launch(Transform target){
         }
     }
 
+public void DestroyActiveMissile(){
+    if(activeMissile != null){
+        Destroy(activeMissile);
+        activeMissile = null;
+        }
+    }
+
 }
 
