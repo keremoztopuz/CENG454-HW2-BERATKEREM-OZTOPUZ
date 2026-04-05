@@ -9,6 +9,10 @@ public class MissileLauncher : MonoBehaviour
     private GameObject activeMissile;
 
 public void Launch(Transform target){
+    Debug.Log("Launch called!");
+    Debug.Log("missilePrefab: " + missilePrefab);
+    Debug.Log("launchPoint: " + launchPoint);
+    
     GameObject spawnedMissile = Instantiate(missilePrefab, launchPoint.position, launchPoint.rotation);
     activeMissile = spawnedMissile;
     MissileHoming homing = activeMissile.GetComponent<MissileHoming>();

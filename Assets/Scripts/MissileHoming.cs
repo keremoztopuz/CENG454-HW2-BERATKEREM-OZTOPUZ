@@ -24,6 +24,7 @@ public class MissileHoming : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, turnSpeed * Time.deltaTime);
         transform.position += transform.forward * moveSpeed * Time.deltaTime;
+        transform.LookAt(target);
     }
 
     void OnTriggerEnter(Collider other) {
