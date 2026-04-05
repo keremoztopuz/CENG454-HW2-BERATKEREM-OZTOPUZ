@@ -3,7 +3,7 @@ using UnityEngine;
 public class MissileHoming : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 20f;
-    [SerializeField] private float turnSpeed = 100f;
+    //[SerializeField] private float turnSpeed = 100f;
     private Transform target;
     
     [SerializeField] private FlightExamController examManager;
@@ -13,19 +13,19 @@ public class MissileHoming : MonoBehaviour
         target = newTarget;
     }
 
-    void Update()
-    {
-        if (target == null) return;
-        Vector3 direction = (target.position - transform.position).normalized;
-        transform.rotation = Quaternion.LookRotation(direction);
-        transform.position += direction * moveSpeed * Time.deltaTime; 
-    }
-
     void OnTriggerEnter(Collider other) {
         Debug.Log("Trigger entered by" + other.name);
         if (other.CompareTag("DangerZone")) return; 
         if (!other.CompareTag("Player")) return;
         examManager.OnMissileHit();
         Destroy(gameObject);
+    }
+
+    void Update()
+    {
+        if (!target) return;
+        Vector3 direction = (target.position - transform.position).normalized;
+        transform.rotation = Quaternion.LookRotation(direction);
+        transform.position += direction * moveSpeed * Time.deltaTime; 
     }
 }
