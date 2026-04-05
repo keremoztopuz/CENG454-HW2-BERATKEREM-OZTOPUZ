@@ -11,13 +11,15 @@ public class DangerZoneController : MonoBehaviour
     [SerializeField] private Transform aircraftTransform;
     private Coroutine activeCountdown;
 
-    void OnTriggerEnter(Collider other) {
-        if(!other.CompareTag("Player")) return;
+    void OnTriggerEnter(Collider other) 
+    {
+        if(!other.CompareTag("Player") || activeCountdown != null) return;
         examManager.EnterDangerZone();
         activeCountdown = StartCoroutine(MissileCountdown());
     }
 
-    void OnTriggerExit(Collider other) {
+    void OnTriggerExit(Collider other) 
+    {
         if(!other.CompareTag("Player")) return;
         if(activeCountdown != null){
             StopCoroutine(activeCountdown);
@@ -27,7 +29,8 @@ public class DangerZoneController : MonoBehaviour
         }
     }
 
-    private IEnumerator MissileCountdown(){
+    private IEnumerator MissileCountdown()
+    {
         while(true){
             yield return new WaitForSeconds(missileDelay);
             foreach (MissileLauncher ml in missileLaunchers) ml.Launch(aircraftTransform);
