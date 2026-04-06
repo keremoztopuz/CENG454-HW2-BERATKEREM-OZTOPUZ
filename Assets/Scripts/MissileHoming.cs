@@ -5,8 +5,12 @@ public class MissileHoming : MonoBehaviour
     [SerializeField] private float moveSpeed = 20f;
     //[SerializeField] private float turnSpeed = 100f;
     private Transform target;
+    private FlightExamController examManager;
     
-    [SerializeField] private FlightExamController examManager;
+    void Start()
+    {
+        examManager = FindFirstObjectByType<FlightExamController>();
+    }
 
     public void SetTarget(Transform newTarget) {
         Debug.Log("Target set: " + newTarget.name);
