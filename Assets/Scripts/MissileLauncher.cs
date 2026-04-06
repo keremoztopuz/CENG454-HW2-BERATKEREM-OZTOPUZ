@@ -4,7 +4,7 @@ public class MissileLauncher : MonoBehaviour
 {
     [SerializeField] private GameObject missilePrefab;
     [SerializeField] private Transform launchPoint;
-    [SerializeField] private AudioSource launchAudio;
+    private AudioSource launchAudio;
 
     private GameObject activeMissile;
 
