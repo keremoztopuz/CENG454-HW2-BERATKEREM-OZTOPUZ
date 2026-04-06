@@ -1280,7 +1280,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DangerZoneController
   examManager: {fileID: 2110862004}
+  missileLaunchers:
+  - {fileID: 1555073916}
+  - {fileID: 931105295}
+  - {fileID: 2013175666}
+  - {fileID: 1229171505}
+  - {fileID: 67083331}
   missileDelay: 5
+  aircraftTransform: {fileID: 556030856}
 --- !u!1 &578136122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,7 +1414,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DangerZoneController
   examManager: {fileID: 2110862004}
+  missileLaunchers:
+  - {fileID: 1264809907}
+  - {fileID: 2039557698}
+  - {fileID: 1360974020}
+  - {fileID: 1794216325}
+  - {fileID: 351523478}
+  - {fileID: 620645542}
   missileDelay: 5
+  aircraftTransform: {fileID: 556030856}
 --- !u!1 &580559424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,7 +1549,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DangerZoneController
   examManager: {fileID: 2110862004}
+  missileLaunchers:
+  - {fileID: 1702387188}
+  - {fileID: 547004438}
+  - {fileID: 1305030498}
+  - {fileID: 2121294163}
+  - {fileID: 813321603}
+  - {fileID: 1354806552}
+  - {fileID: 119208751}
   missileDelay: 5
+  aircraftTransform: {fileID: 556030856}
 --- !u!4 &614786546 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 13369524f100e4aeaaff278188c2a480, type: 3}
@@ -4035,7 +4059,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DangerZoneController
   examManager: {fileID: 2110862004}
+  missileLaunchers:
+  - {fileID: 1920923078}
+  - {fileID: 1676716436}
+  - {fileID: 23231218}
+  - {fileID: 946025529}
+  - {fileID: 487852025}
   missileDelay: 5
+  aircraftTransform: {fileID: 556030856}
 --- !u!1 &1676716434 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2021030453679786847, guid: 1fd872187a64d486a8c676bc971cb7b4, type: 3}
