@@ -52,6 +52,13 @@ public class FlightController : MonoBehaviour
         if(Input.GetKey(KeyCode.A)){
             transform.Rotate(Vector3.down * rotspeed2 * Time.deltaTime);
         }
+        if(Input.GetKeyDown(KeyCode.M)){
+            examManager.OnMissileHit();
+            examManager.ResetMission();
+            speed = 0;
+            rotspeed1 = 0;
+            rotspeed2 = 0;
+        }
 
         if(!hasTakenOff && transform.position.y >= 20) {
             examManager.OnTakeoff();
