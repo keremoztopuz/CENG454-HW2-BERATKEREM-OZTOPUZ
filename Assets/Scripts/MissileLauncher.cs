@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class MissileLauncher : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class MissileLauncher : MonoBehaviour
     [SerializeField] private Transform launchPoint;
     private AudioSource launchAudio;
 
-    private GameObject activeMissile;
+    private List<GameObject> activeMissiles = new List<GameObject>();
 
 public void Launch(Transform target)
 {
@@ -15,8 +16,8 @@ public void Launch(Transform target)
     Debug.Log("launchPoint: " + launchPoint);
     
     GameObject spawnedMissile = Instantiate(missilePrefab, launchPoint.position, launchPoint.rotation);
-    activeMissile = spawnedMissile;
-    MissileHoming homing = activeMissile.GetComponent<MissileHoming>();
+    activeMissiles.Add(spawnedMissile);
+    MissileHoming homing = spawnedMissile.GetComponent<MissileHoming>();
 
     if(homing != null){
         homing.SetTarget(target);
@@ -27,10 +28,10 @@ public void Launch(Transform target)
 
 public void DestroyActiveMissile()
 {
-    if(activeMissile != null){
-        Destroy(activeMissile);
-        activeMissile = null;
-        }
+    foreach(GameObject missile in activeMissiles){
+        Destroy(missile);
+    }
+    activeMissiles.Clear();
     }
 
 }
