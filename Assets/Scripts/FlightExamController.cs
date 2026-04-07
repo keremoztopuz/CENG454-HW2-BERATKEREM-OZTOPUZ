@@ -3,7 +3,7 @@ using TMPro;
 
 public class FlightExamController : MonoBehaviour
 {
-
+    [SerializeField] private Transform aircraft;
     [SerializeField] private TMP_Text statusText;
     [SerializeField] private TMP_Text missionText;
     [SerializeField] private AudioSource dangerZoneAudio;
@@ -15,8 +15,13 @@ public class FlightExamController : MonoBehaviour
     private bool threatCleaned;
     private bool missionCompleted;
 
+    private Vector3 beginningPosition;
+    private Quaternion beginningRotation;
+
     void Start()
     {
+        beginningPosition = aircraft.position;
+        beginningRotation = aircraft.rotation;
         updateHUD();
     }
 
@@ -58,7 +63,7 @@ public class FlightExamController : MonoBehaviour
         hasTakenOff = false;
         threatCleaned = false;
         inDangerZone = false;
-        missionText.text = "Missile Hit!";
+        missionText.text = "Missile Hit! Mission Failed. Press M to try again.";
         missionText.color = Color.red;
         updateHUD();
     }
@@ -67,9 +72,22 @@ public class FlightExamController : MonoBehaviour
         if (hasTakenOff && threatCleaned) {
             missionCompleted = true;
             missionText.text = "Congratulations soldier. You can return home now.";
-            safeAudio.PlayOneShot(safeAudio.clip);
+            missionAudio.Play();
             updateHUD();
         }
+    }
+
+    public void ResetMission() {
+        hasTakenOff = false;
+        inDangerZone = false;
+        threatCleaned = false;
+        missionCompleted = false;
+        missionText.text = "";
+        missionText.color = Color.white;
+        updateHUD();
+
+        aircraft.position = beginningPosition;
+        aircraft.rotation = beginningRotation;
     }
 
 }
