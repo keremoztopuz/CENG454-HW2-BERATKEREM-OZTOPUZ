@@ -2,11 +2,15 @@ using UnityEngine;
 
 public class FlightController : MonoBehaviour
 {
+    [SerializeField] private FlightExamController examManager;
+
     public float speed;
     public float maxSpeed = 500f;
     public float minSpeed = 0f;
     public float rotspeed1 = 25f;
     public float rotspeed2 = 25f;
+
+    private bool hasTakenOff = false;
 
     private Rigidbody rb;
 
@@ -48,5 +52,11 @@ public class FlightController : MonoBehaviour
         if(Input.GetKey(KeyCode.A)){
             transform.Rotate(Vector3.down * rotspeed2 * Time.deltaTime);
         }
+
+        if(!hasTakenOff && transform.position.y >= 20) {
+            examManager.OnTakeoff();
+            hasTakenOff = true;
+        }
+
     }
 }
