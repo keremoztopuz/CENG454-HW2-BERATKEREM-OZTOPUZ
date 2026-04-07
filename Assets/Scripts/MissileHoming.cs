@@ -29,7 +29,7 @@ public class MissileHoming : MonoBehaviour
     {
         if (!target) return;
         Vector3 direction = (target.position - transform.position).normalized;
-        transform.rotation = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.LookRotation(direction) * Quaternion.Euler(90,0,0);
         transform.position += direction * moveSpeed * Time.deltaTime; 
     }
 }
