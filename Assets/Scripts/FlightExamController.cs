@@ -6,13 +6,14 @@ public class FlightExamController : MonoBehaviour
 
     [SerializeField] private TMP_Text statusText;
     [SerializeField] private TMP_Text missionText;
+    [SerializeField] private AudioSource dangerZoneAudio;
+    [SerializeField] private AudioSource safeAudio;
+
     private bool hasTakenOff;
     private bool inDangerZone;
     private bool threatCleaned;
     private bool missionCompleted;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         updateHUD();
@@ -39,6 +40,7 @@ public class FlightExamController : MonoBehaviour
         inDangerZone = true;
         missionText.text = "ENTERED DANGER ZONE! LEAVE IMMEDIATELY!";
         missionText.color = Color.red;
+        dangerZoneAudio.Play();
         updateHUD();
     }
 
@@ -46,6 +48,8 @@ public class FlightExamController : MonoBehaviour
         inDangerZone = false;
         threatCleaned = true;
         missionText.text = "The danger zone has been left. Stay on the safe zone.";
+        dangerZoneAudio.Stop();
+        safeAudio.Play();
         updateHUD();
     }
 
@@ -62,12 +66,9 @@ public class FlightExamController : MonoBehaviour
         if (hasTakenOff && threatCleaned) {
             missionCompleted = true;
             missionText.text = "Congratulations soldier. You can return home now.";
+            safeAudio.PlayOneShot(safeAudio.clip);
             updateHUD();
         }
     }
 
-    void Update()
-    {
-        
-    }
 }
