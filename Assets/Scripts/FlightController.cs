@@ -35,22 +35,34 @@ public class FlightController : MonoBehaviour
         }
 
         if(Input.GetKey(KeyCode.Q)){
-            transform.Rotate(Vector3.back * rotspeed1 * Time.deltaTime);
+            if (speed >= 150f){
+                transform.Rotate(Vector3.back * rotspeed1 * Time.deltaTime);
+            }
         }
         if(Input.GetKey(KeyCode.E)){
-            transform.Rotate(Vector3.forward * rotspeed1 * Time.deltaTime);
+            if (speed >= 150f){
+                transform.Rotate(Vector3.forward * rotspeed1 * Time.deltaTime);
+            }
         }
         if(Input.GetKey(KeyCode.S)){
-            transform.Rotate(Vector3.right * rotspeed2 * Time.deltaTime);
+            if (speed >= 150f || hasTakenOff){
+                transform.Rotate(Vector3.right * rotspeed2 * Time.deltaTime);
+            }
         }
         if(Input.GetKey(KeyCode.W)){
-            transform.Rotate(Vector3.left * rotspeed2 * Time.deltaTime);
+            if (speed >= 150f || hasTakenOff){
+                transform.Rotate(Vector3.left * rotspeed2 * Time.deltaTime);
+            }
         }
         if(Input.GetKey(KeyCode.D)){
-            transform.Rotate(Vector3.up * rotspeed2 * Time.deltaTime);
+            if (speed >= 150f || hasTakenOff){
+                transform.Rotate(Vector3.up * rotspeed2 * Time.deltaTime);
+            }
         }
         if(Input.GetKey(KeyCode.A)){
-            transform.Rotate(Vector3.down * rotspeed2 * Time.deltaTime);
+            if (speed >= 150f || hasTakenOff){
+                transform.Rotate(Vector3.down * rotspeed2 * Time.deltaTime);
+            }
         }
         if(Input.GetKeyDown(KeyCode.M)){
             examManager.OnMissileHit();
