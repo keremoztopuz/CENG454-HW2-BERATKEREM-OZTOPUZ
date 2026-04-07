@@ -4979,11 +4979,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf5cd3f43cfc4d10aec0c27e846a1e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlightExamController
+  aircraft: {fileID: 556030856}
   statusText: {fileID: 1216161649}
   missionText: {fileID: 858881368}
   dangerZoneAudio: {fileID: 2110862007}
   safeAudio: {fileID: 2110862006}
-  missionAudio: {fileID: 0}
+  missionAudio: {fileID: 2110862008}
 --- !u!4 &2110862005
 Transform:
   m_ObjectHideFlags: 0
