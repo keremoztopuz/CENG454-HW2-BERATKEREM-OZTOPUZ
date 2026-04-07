@@ -5,7 +5,7 @@ public class MissileLauncher : MonoBehaviour
 {
     [SerializeField] private GameObject missilePrefab;
     [SerializeField] private Transform launchPoint;
-    private AudioSource launchAudio;
+    [SerializeField] private AudioClip launchAudio;
 
     private List<GameObject> activeMissiles = new List<GameObject>();
 
@@ -23,7 +23,9 @@ public void Launch(Transform target)
         homing.SetTarget(target);
         }
 
-    launchAudio?.Play();
+    if (launchAudio != null){
+        AudioSource.PlayClipAtPoint(launchAudio, Camera.main.transform.position, 0.5f);
+        }
     }
 
 public void DestroyActiveMissile()
