@@ -45,22 +45,22 @@ public class FlightController : MonoBehaviour
             }
         }
         if(Input.GetKey(KeyCode.S)){
-            if (speed >= 150f || transform.position.y >= 50f){
+            if (speed >= 150f || transform.position.y >= 5f){
                 transform.Rotate(Vector3.right * rotspeed2 * Time.deltaTime);
             }
         }
         if(Input.GetKey(KeyCode.W)){
-            if (speed >= 150f || transform.position.y >= 50f){
+            if (speed >= 150f || transform.position.y >= 5f){
                 transform.Rotate(Vector3.left * rotspeed2 * Time.deltaTime);
             }
         }
         if(Input.GetKey(KeyCode.D)){
-            if (speed >= 150f || transform.position.y >= 50f){
+            if (speed >= 150f || transform.position.y >= 5f){
                 transform.Rotate(Vector3.up * rotspeed2 * Time.deltaTime);
             }
         }
         if(Input.GetKey(KeyCode.A)){
-            if (speed >= 150f || transform.position.y >= 50f){
+            if (speed >= 150f || transform.position.y >= 5f){
                 transform.Rotate(Vector3.down * rotspeed2 * Time.deltaTime);
             }
         }
