@@ -8,6 +8,7 @@ public class FlightExamController : MonoBehaviour
     [SerializeField] private TMP_Text missionText;
     [SerializeField] private AudioSource dangerZoneAudio;
     [SerializeField] private AudioSource safeAudio;
+    [SerializeField] private AudioSource missionAudio;
 
     private bool hasTakenOff;
     private bool inDangerZone;
